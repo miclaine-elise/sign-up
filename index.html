@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="left">
+        <img id="background" src="blue-background.avif" alt="Cracked paint">
+        <img id="logo" src="cinna-logo.svg" alt="Cinna Logo">
+        <div id="logo-background"></div>
+    </div>
+    <div id="barrier"></div>
+    <div id="right">
+        <div id="introduction">
+            <p>This is not a real service, but maybe one day it'll be a cute little
+                coffee and cocktail food truck. Book Cinna for your next event!</p>
+            <p>You <text>know</text> you want to.</p>
+        </div>
+        <form>
+            <div id="signup-container">
+                <p id="form-title">Let's do this!</p>
+                <div id="form-container">
+                    <div id="left-form">
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" name="first_name" id="first_name" required>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="pwd">PASSWORD</label>
+                        <input type="password" id="pwd" name="password" required>
+                    </div>
+                    <div id="right-form">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" name="last_name" id="last_name" required>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="number" id="number">
+                        <label for="pwd"> CONFIRM PASSWORD</label>
+                        <input type="password" id="pwd" name="password" required>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
+        <span id="account">Already have an account? <a>Login</a></span>
+    </div>
+
+</body>
+
+</html>

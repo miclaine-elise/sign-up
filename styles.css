@@ -1,0 +1,117 @@
+html body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    background-color: rgb(244, 241, 238);
+    font-family: "Rubik", sans-serif;
+    color: rgb(49, 48, 48);
+}
+
+#barrier {
+    background-color: rgb(49, 48, 48);
+    width: 2px;
+    height: 100vh;
+}
+
+#left {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#background {
+    height: 100vh;
+    width: 100%;
+    z-index: -2;
+    position: absolute;
+}
+
+#logo {
+    width: 300px;
+    position: absolute;
+    align-self: center;
+}
+
+#logo-background {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    align-self: center;
+    z-index: -1;
+}
+
+#right {
+    flex: 1.75;
+}
+
+#signup-container {
+    background-color: rgb(250, 249, 247);
+    padding: 2rem;
+    box-shadow: 10px 5px 5px rgb(125, 125, 125);
+    align-self: center;
+}
+
+#form-title {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+#form-container {
+    display: flex;
+    font-size: 0.75rem;
+}
+
+#left-form {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem;
+}
+
+#right-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    width: 200px;
+}
+
+#introduction {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    padding-right: 16rem;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+}
+
+text {
+    font-style: italic;
+}
+
+button {
+    color: white;
+    background-color: rgb(51, 51, 52);
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: solid;
+    border-color: rgb(52, 51, 51);
+    font-size: 1rem;
+    margin: 2rem;
+    box-shadow: 1px 5px 5px rgb(125, 125, 125);
+}
+
+#account {
+    padding-left: 2rem;
+}
