@@ -27,22 +27,36 @@
             <div id="signup-container">
                 <p id="form-title">Let's do this!</p>
                 <div id="form-container">
-                    <div id="left-form">
-                        <label for="first_name">FIRST NAME</label>
-                        <input type="text" name="first_name" id="first_name" required>
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email" required>
-                        <label for="pwd">PASSWORD</label>
-                        <input type="password" id="pwd" name="password" minlength="8" required>
-                        <span class="error"> </span>
+                    <div class="input-row">
+                        <div class="input-container">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first_name" required>
+                        </div>
+                        <div class="input-container">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last_name" required>
+                        </div>
                     </div>
-                    <div id="right-form">
-                        <label for="last_name">LAST NAME</label>
-                        <input type="text" name="last_name" id="last_name" required>
-                        <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="number" id="phone">
-                        <label for="confirm_pwd"> CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm_pwd" name="password" required>
+                    <div class="input-row">
+                        <div class="input-container">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="input-container">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" name="number" id="phone">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-container">
+                            <label for="pwd">PASSWORD</label>
+                            <input type="password" id="pwd" name="password" minlength="8" required>
+                            <span class="error"> </span>
+                        </div>
+                        <div class="input-container">
+                            <label for="confirm_pwd"> CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm_pwd" name="password" required>
+                        </div>
                     </div>
                 </div>
             </div>
