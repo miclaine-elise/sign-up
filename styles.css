@@ -81,10 +81,27 @@ body {
     flex-direction: column;
 }
 
+label {
+    margin-top: 1rem;
+}
+
 input {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     width: 200px;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    border-width: 1px;
+    border-style: solid;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+.error {
+    color: red;
+    padding: 0;
+    margin: 0;
 }
 
 #introduction {
