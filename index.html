@@ -21,9 +21,7 @@
     <div id="barrier"></div>
     <div id="right">
         <div id="introduction">
-            <p>This is not a real service, but maybe one day it'll be a cute little
-                coffee and cocktail food truck. Book Cinna for your next event!</p>
-            <p>You <text>know</text> you want to.</p>
+            <p>The right beverage for <text> every</text> occasion</p>
         </div>
         <form>
             <div id="signup-container">
@@ -31,7 +29,7 @@
                 <div id="form-container">
                     <div id="left-form">
                         <label for="first_name">FIRST NAME</label>
-                        <input type="text" name="first_name" id="first_name" required novalidate>
+                        <input type="text" name="first_name" id="first_name" required>
                         <label for="email">EMAIL</label>
                         <input type="email" name="email" id="email" required>
                         <label for="pwd">PASSWORD</label>
@@ -53,14 +51,15 @@
         <span id="account">Already have an account? <a>Login</a></span>
     </div>
     <script>
-        const form = document.querySelector('form');
-        form.noValidate = true;
         const pwd = document.querySelector('#pwd');
         const confirmPwd = document.querySelector('#confirm_pwd');
         const error = document.querySelector('.error');
         confirmPwd.addEventListener('input', (event) => {
             if (confirmPwd.value !== pwd.value) {
                 error.textContent = "* Passwords do not match";
+                confirmPwd.style.borderColor = "red";
+                pwd.style.borderColor = "red";
+
             } else {
                 error.textContent = "";
             }
